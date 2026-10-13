@@ -1,0 +1,16 @@
+# Python environment and caches
+.venv/
+__pycache__/
+*.pyc
+
+# Secrets
+.env
+
+# Editor and OS files
+.vscode/
+.idea/
+.DS_Store
+
+# Spring Boot build output (for later)
+target/
+build/
