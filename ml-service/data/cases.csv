@@ -268,3 +268,43 @@ text,label
 "what should I make for dinner tonight",off_topic
 "can you proofread my essay",off_topic
 "tell me a fun fact about space",off_topic
+"what is the return window for a refrigerator",general_question
+"do you offer haul away for old washers?",general_question
+"how much does dryer installation usually cost",general_question
+"is delivery included in the price of the stove",general_question
+"can you tell me what your cancellation policy is",general_question
+"do you deliver on weekends?",general_question
+"what happens if my dishwasher arrives damaged",general_question
+"Hello, I was wondering whether wall mounting is available for TVs over 65 inches.",general_question
+"are there any fees for returning a microwave",general_question
+"do you hook up gas ranges or just electric ones",general_question
+"how long does a typical installation take",general_question
+"does the warranty on the freezer cover delivery damage",general_question
+"what kind of dryer vent do I need for installation",general_question
+"do you take away the packaging when you deliver a fridge?",general_question
+"Good afternoon, could you explain how exchanges work for large appliances?",general_question
+"can I return an appliance if I already opened the box",general_question
+"how many days do I have to report a damaged washer",general_question
+"is installation included with the range hood",general_question
+"do I need to be home for the delivery of my dishwasher",general_question
+"what's the difference between standard and premium installation",general_question
+"do you recycle old appliances?",general_question
+"how do I know which size washer fits in my laundry closet",general_question
+"will the delivery team move the old fridge out of the way",general_question
+"is there a restocking fee for exchanging a dryer",general_question
+"I'd like to understand what your policy is on cancelling an order that has already shipped.",general_question
+"do you install over-the-range microwaves or only countertop ones",general_question
+"what are your delivery hours",general_question
+"does installation cover connecting the ice maker line on a fridge",general_question
+"can you explain what happens when a unit arrives scratched",general_question
+"is it possible to get a washer delivered to an apartment on the 5th floor",general_question
+"how does your haul away service work",general_question
+"what does the standard warranty cover on a stove",general_question
+"do you offer cable hiding when you mount a TV",general_question
+"are returns free if the dryer is defective",general_question
+"what do I need to have ready before the installer arrives",general_question
+"is there a time limit for cancelling an oven order",general_question
+"do you ship the freezer in one piece or does it need assembly",general_question
+"what's covered if the dishwasher leaks after installation",general_question
+"how do I prepare my kitchen for a new range being installed",general_question
+"does the exchange policy apply to special order appliances",general_question

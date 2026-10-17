@@ -43,3 +43,19 @@ text,label
 "my new range doesn't work and your installer blamed me. I want it replaced or I want my money back",appliance_condition
 "I know it's too late to cancel, but the fridge arrived and I changed my mind, can you take it back",return_exchange
 "the installer scratched my new stove while hooking it up and I need it fixed",appliance_condition
+"why is nobody able to tell me what the return policy is, I've asked three times",general_question
+"I keep getting different answers about whether installation is included. Is it or isn't it?",general_question
+"this is the worst service, do you even offer haul away or not",general_question
+"how long do I have to wait for a refund after a return? nobody will tell me",general_question
+"what exactly happens if the delivery guys damage my stove, because I'm getting really nervous",general_question
+"can someone just tell me if wall mounting is included before I lose my mind",general_question
+"I'm so tired of calling, is there a fee to cancel an order that already shipped",general_question
+"seriously, what's the warranty on a washer? I've asked twice",general_question
+"do you guys install dishwashers or do I need to hire someone myself",general_question
+"just tell me how many days I have to return the fridge",general_question
+"stop asking me questions and just book the dishwasher installation",service_request
+"I asked what the cancellation policy was and now I want to use it, cancel my stove order",cancellation
+"what's the return policy? because I want to return my dryer, it doesn't fit",return_exchange
+"do you install dishwashers? I need mine installed Thursday",service_request
+"is it too late to cancel? I'm furious, nobody ever called me back",cancellation
+"how do I get a refund for the fridge? it arrived completely destroyed",appliance_condition
