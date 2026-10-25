@@ -131,33 +131,32 @@ text,label
 "do you mind picking up the microwave, I want to return it",return_exchange
 "I want to return my dishwasher, what do I need to do",return_exchange
 "I need someone to install the dishwasher I bought",service_request
-"can I add haul away for my old fridge",service_request
+"can I add haulaway for my old fridge",service_request
 "the installer never showed up, I need to book installation again",service_request
-"I need the old washer removed when the new one arrives",service_request
+"I need haul away of the old washer when the new one arrives",service_request
 "please arrange a gas line hookup for the new stove",service_request
 "how do I book installation for my dryer",service_request
 "I need an installation appointment for my over-the-range microwave",service_request
 "can you add installation to my existing order",service_request
-"I'd like the old dishwasher hauled away at delivery",service_request
+"I'd like haul away of the old dishwasher at delivery",service_request
 "I need help getting my new washer installed",service_request
-"book a haul away for my old stove please",service_request
+"book a haulaway and recycling for my old stove please",service_request
 "i bought a dryer and need a vent hookup done",service_request
 "can I get the TV mounted on my wall when it's delivered",service_request
 "the installation team left without finishing, I need someone to come back",service_request
-"I'd like to add removal of my old dishwasher to my order",service_request
-"how much is installation for an over-the-range microwave, I'd like to add it",service_request
+"I'd like to add haul away and recycling of my old dishwasher to my order",service_request
 "need a technician to install the gas range I ordered",service_request
 "please schedule installation for my new fridge's water line",service_request
-"can you arrange for someone to take away the old washer and dryer",service_request
+"can you arrange haul away and recycling of the old washer and dryer",service_request
 "I want to add professional installation to the dishwasher on my order",service_request
 "my installer said the wrong part was used, I need another installation visit",service_request
 "Hello, I'd like to request installation and haul away for the range I just bought.",service_request
-"need the old fridge removed when the new one is delivered",service_request
+"need haul away of the old fridge when the new one is delivered",service_request
 "can the delivery team also install my new washer?",service_request
 "I need an install appointment for the electric stove",service_request
 "installation wasnt done properly, the dishwasher isn't connected, please send someone",service_request
-"do you also remove packaging and old appliances? I'd like that added",service_request
-"i need the new dryer hooked up and the old one taken away",service_request
+"do you also do haul away and recycling of packaging and old appliances? I'd like that added",service_request
+"i need the new dryer hooked up and haul away of the old one",service_request
 "I need an electrician to wire the new oven",service_request
 "schedule a technician to hook up my dryer vent",service_request
 "I'd like to book installation for the range I'm picking up in store",service_request
@@ -165,29 +164,28 @@ text,label
 "haul away for the old dryer and install the new one please",service_request
 "I need a second person to help install a heavy fridge",service_request
 "please add gas stove hookup to my order, I have the line already",service_request
-"how do I get my old appliances removed",service_request
+"how do I get haul away and recycling for my old appliances",service_request
 "i need the new microwave installed above the stove",service_request
 "book an installation for the washer I'm getting next week",service_request
 "the installer didn't bring the right fittings, I need him to come back",service_request
 "I'd like to add delivery and installation for the dishwasher",service_request
-"can the freezer be installed in my basement? I'll need help getting it down the stairs",service_request
-"remove the old oven and install the new wall oven",service_request
+"haul away the old oven and install the new wall oven",service_request
 "I need water line installation for my fridge ice maker",service_request
-"please add haul away to order 51209",service_request
-"can you add stairs carry-up to my delivery",service_request
+"please add haul away and recycling to order 51209",service_request
+"can you add haulaway to my delivery",service_request
 "can you book an installer for my new dishwasher on Friday",service_request
 "I'd like to add haul away for the old dryer to my delivery",service_request
 "can you send a technician to hook up my gas stove",service_request
 "please have someone mount the TV when it arrives",service_request
 "can you add installation to the fridge on my order, it needs a water line",service_request
-"I'd like someone to remove my old washer and install the new one",service_request
+"I'd like haul away of my old washer and installation of the new one",service_request
 "can you book an installer for my dryer, I need it done this week",service_request
 "could you add haul away for my old stove to my order, please",service_request
 "is it possible to add installation to my dishwasher order? I want it installed",service_request
 "do you mind sending someone to mount my TV, I need it done",service_request
 "can I get the washer installed on Friday",service_request
 "could you schedule an installer for my range, I'd like it done Tuesday",service_request
-"can you arrange haul away of my old fridge when the new one comes",service_request
+"can you arrange haul away and recycling of my old fridge when the new one comes",service_request
 "the fridge arrived with a big dent on the side",appliance_condition
 "my washer was delivered scratched and I don't want it",appliance_condition
 "the dryer is dead, it won't turn on at all",appliance_condition
@@ -216,7 +214,7 @@ text,label
 "unit is covered in scratches, I refuse to keep it like this",appliance_condition
 "the washer door is cracked, delivered this morning",appliance_condition
 "the installer discovered a dent on the back of my microwave. I need to return it",appliance_condition
-"the carrer dropped my microwave during delivery. I need an exchange immediately",appliance_condition
+"the carrier dropped my microwave during delivery. I need an exchange immediately",appliance_condition
 "my new fridge's ice maker doesn't work at all",appliance_condition
 "the oven is dented at the bottom, I have photos",appliance_condition
 "freezer stopped working after 2 days, everything thawed",appliance_condition
@@ -382,73 +380,257 @@ text,label
 "is delivery included in the price of the stove",general_question
 "will the delivery team move the old fridge out of the way",general_question
 "do you take away the packaging when you deliver a fridge?",general_question
-"text","label"
-"is it possible to find out what the cutoff is for cancelling a stove order","general_question"
-"will I be charged anything if an order is cancelled before it ships","general_question"
-"how does a cancellation work if the order was paid with financing","general_question"
-"what is the process for cancelling a dishwasher order in general","general_question"
-"how long does a refund usually take after an order is cancelled","general_question"
-"I'm curious whether a cancelled fridge order is refunded in full or partly","general_question"
-"does cancelling an order by phone work the same as cancelling online","general_question"
-"do you know if an order can be cancelled once the unit leaves the warehouse","general_question"
-"what are the rules around cancelling a range that was ordered with a delivery date","general_question"
-"could you tell me how many days I have to return a washer after it arrives","general_question"
-"is it possible to return an appliance that was installed","general_question"
-"will I need the original box if I decide to exchange a microwave","general_question"
-"do exchanges for a different size need to be done within a certain window","general_question"
-"what happens to my old dryer if I swap it for a different model","general_question"
-"can you tell me if a returned fridge is picked up from my home or do I bring it in","general_question"
-"how does a refund work when a stove is returned","general_question"
-"does the exchange policy cover TVs the same as large appliances","general_question"
-"what condition does a dishwasher need to be in to be returned","general_question"
-"is a return still possible if the warranty card was already filled out","general_question"
-"are there any items that can't be returned, like custom colour ranges","general_question"
-"how do I find out if my freezer is eligible for an exchange","general_question"
-"who covers the cost of pickup when a washer is returned","general_question"
-"will an exchanged dryer come with a new warranty","general_question"
-"do you offer price matching on appliances after a purchase","general_question"
-"can you tell me whether installation can be added after an order is placed","general_question"
-"how far in advance should installation be booked","general_question"
-"does the installer bring the parts needed for a gas stove hookup","general_question"
-"will the installers level the washer after connecting it","general_question"
-"do you provide dryer vent kits or do I buy those separately","general_question"
-"is it possible to get an electrician for a 240 volt outlet through you","general_question"
-"what is included in a standard dishwasher installation","general_question"
-"does the haul away team disconnect the old unit or do I have to do it first","general_question"
-"how many old appliances can be removed in one haul away visit","general_question"
-"will the delivery crew take the old fridge out of the way when they bring the new one","general_question"
-"are there extra charges for stairs when an appliance is installed","general_question"
-"does installation of a wall oven include cutting the cabinet","general_question"
-"what happens if the installer finds my gas line isn't up to code","general_question"
-"do you install microwaves that I bought from another retailer","general_question"
-"is the TV mounting bracket included with wall mounting","general_question"
-"is a dented side panel that will be against the wall treated as damage","general_question"
-"how do I know if a problem with my new fridge is covered as a defect","general_question"
-"will I have to pay for a technician if the dryer turns out to be defective","general_question"
-"what happens after I report a damaged range","general_question"
-"is there a time limit to report a crack in a stove glass top","general_question"
-"please explain the difference between damage claims and warranty claims","general_question"
-"what does the manufacturer warranty cover for a dishwasher in the first year","general_question"
-"are photos required to start a claim for a dented washer","general_question"
-"does a chip in the enamel count as damage on delivery","general_question"
-"how long does it normally take to resolve a damage claim","general_question"
-"if a freezer arrives broken, will it be replaced or repaired","general_question"
-"what's the usual process when a microwave is dead on arrival","general_question"
-"can you tell me what time windows are available for delivery","general_question"
-"will I get a call before the delivery team arrives","general_question"
-"can a neighbour accept the delivery of my washer if I'm out","general_question"
-"what happens if nobody is home when the dryer is delivered","general_question"
-"do you deliver to rural areas and is there an extra fee","general_question"
-"does delivery include setting the appliance in place","general_question"
-"do you charge a fee if I cancel an order before it ships","general_question"
-"do you accept returns on appliances that have been installed","general_question"
-"do you offer exchanges on TVs or only on large appliances","general_question"
-"do you cover the cost of return pickup for a defective washer","general_question"
-"do you require photos when a fridge arrives with a dent","general_question"
-"do you replace or repair a dryer that stops working in the first month","general_question"
-"do you have a time limit for reporting a cracked stove glass top","general_question"
-"do you refund the delivery fee when an order is cancelled","general_question"
-"do you install dishwashers in older homes with no shut-off valve","general_question"
-"do you remove the old dryer vent when you install a new one","general_question"
-"do you call before the delivery truck arrives","general_question"
-"do you deliver appliances to apartments with no elevator","general_question"
+"is it possible to find out what the cutoff is for cancelling a stove order",general_question
+"will I be charged anything if an order is cancelled before it ships",general_question
+"how does a cancellation work if the order was paid with financing",general_question
+"what is the process for cancelling a dishwasher order in general",general_question
+"how long does a refund usually take after an order is cancelled",general_question
+"I'm curious whether a cancelled fridge order is refunded in full or partly",general_question
+"does cancelling an order by phone work the same as cancelling online",general_question
+"do you know if an order can be cancelled once the unit leaves the warehouse",general_question
+"what are the rules around cancelling a range that was ordered with a delivery date",general_question
+"could you tell me how many days I have to return a washer after it arrives",general_question
+"is it possible to return an appliance that was installed",general_question
+"will I need the original box if I decide to exchange a microwave",general_question
+"do exchanges for a different size need to be done within a certain window",general_question
+"what happens to my old dryer if I swap it for a different model",general_question
+"can you tell me if a returned fridge is picked up from my home or do I bring it in",general_question
+"how does a refund work when a stove is returned",general_question
+"does the exchange policy cover TVs the same as large appliances",general_question
+"what condition does a dishwasher need to be in to be returned",general_question
+"is a return still possible if the warranty card was already filled out",general_question
+"are there any items that can't be returned, like custom colour ranges",general_question
+"how do I find out if my freezer is eligible for an exchange",general_question
+"who covers the cost of pickup when a washer is returned",general_question
+"will an exchanged dryer come with a new warranty",general_question
+"do you offer price matching on appliances after a purchase",general_question
+"can you tell me whether installation can be added after an order is placed",general_question
+"how far in advance should installation be booked",general_question
+"does the installer bring the parts needed for a gas stove hookup",general_question
+"will the installers level the washer after connecting it",general_question
+"do you provide dryer vent kits or do I buy those separately",general_question
+"is it possible to get an electrician for a 240 volt outlet through you",general_question
+"what is included in a standard dishwasher installation",general_question
+"does the haul away team disconnect the old unit or do I have to do it first",general_question
+"how many old appliances can be removed in one haul away visit",general_question
+"will the delivery crew take the old fridge out of the way when they bring the new one",general_question
+"does installation of a wall oven include cutting the cabinet",general_question
+"what happens if the installer finds my gas line isn't up to code",general_question
+"do you install microwaves that I bought from another retailer",general_question
+"is the TV mounting bracket included with wall mounting",general_question
+"is a dented side panel that will be against the wall treated as damage",general_question
+"how do I know if a problem with my new fridge is covered as a defect",general_question
+"will I have to pay for a technician if the dryer turns out to be defective",general_question
+"what happens after I report a damaged range",general_question
+"is there a time limit to report a crack in a stove glass top",general_question
+"please explain the difference between damage claims and warranty claims",general_question
+"what does the manufacturer warranty cover for a dishwasher in the first year",general_question
+"are photos required to start a claim for a dented washer",general_question
+"does a chip in the enamel count as damage on delivery",general_question
+"how long does it normally take to resolve a damage claim",general_question
+"if a freezer arrives broken, will it be replaced or repaired",general_question
+"what's the usual process when a microwave is dead on arrival",general_question
+"can you tell me what time windows are available for delivery",general_question
+"will I get a call before the delivery team arrives",general_question
+"can a neighbour accept the delivery of my washer if I'm out",general_question
+"what happens if nobody is home when the dryer is delivered",general_question
+"do you deliver to rural areas and is there an extra fee",general_question
+"does delivery include setting the appliance in place",general_question
+"do you charge a fee if I cancel an order before it ships",general_question
+"do you accept returns on appliances that have been installed",general_question
+"do you offer exchanges on TVs or only on large appliances",general_question
+"do you cover the cost of return pickup for a defective washer",general_question
+"do you require photos when a fridge arrives with a dent",general_question
+"do you replace or repair a dryer that stops working in the first month",general_question
+"do you have a time limit for reporting a cracked stove glass top",general_question
+"do you refund the delivery fee when an order is cancelled",general_question
+"do you install dishwashers in older homes with no shut-off valve",general_question
+"do you remove the old dryer vent when you install a new one",general_question
+"do you call before the delivery truck arrives",general_question
+"do you deliver appliances to apartments with no elevator",general_question
+"my fridge came dented, I want to exchange it",appliance_condition
+"the washer arrived cracked, can I send it back",appliance_condition
+"the dryer arrived with a big scratch and I'd like to return it",appliance_condition
+"my new dishwasher is leaking, I want to exchange it for a working one",appliance_condition
+"the stove arrived with a shattered glass top, I need a replacement",appliance_condition
+"the oven door glass is cracked, I want to return it for a refund",appliance_condition
+"the freezer isn't getting cold, please swap it for a new one",appliance_condition
+"my range arrived dented and I'd like a replacement unit",appliance_condition
+"the microwave was broken when I opened the box, I want to return it",appliance_condition
+"the washer won't spin and it's new, I'd like to exchange it",appliance_condition
+"my fridge arrived damaged, can you pick it up and send a new one",appliance_condition
+"dryer arrived with a gouge in the side, I want to return it",appliance_condition
+"the dishwasher is defective, I'd like my money back and a pickup",appliance_condition
+"I received a scratched stove and want to exchange it for an undamaged one",appliance_condition
+"the oven won't heat and it's brand new, I need it replaced",appliance_condition
+"the freezer door arrived bent, I want to send it back",appliance_condition
+"my washer arrived with a cracked lid, can I get a replacement",appliance_condition
+"the fridge ice maker is broken out of the box, I'd like to exchange the unit",appliance_condition
+"the range hood came with a dent, I want to return it",appliance_condition
+"microwave stopped working after two days, can I exchange it for a new one",appliance_condition
+"the dryer is defective and I want to return it",appliance_condition
+"the fridge was dropped during delivery, I want a replacement",appliance_condition
+"my TV came dented, I want to exchange it",return_exchange
+"the TV arrived cracked, can I send it back",return_exchange
+"the TV arrived with a big scratch and I'd like to return it",return_exchange
+"my new TV won't turn on, I want to exchange it for a working one",return_exchange
+"the TV screen was shattered when I opened the box, I need a replacement",return_exchange
+"the TV has a vertical line across the screen, I want to return it for a refund",return_exchange
+"my TV has no picture and it's brand new, please swap it for a new one",return_exchange
+"the TV arrived with a dented frame and I'd like a replacement unit",return_exchange
+"the TV was broken when I opened the box, I want to return it",return_exchange
+"the TV has dead pixels and I'd like to exchange it",return_exchange
+"my TV arrived damaged, can you pick it up and send a new one",return_exchange
+"TV arrived with a gouge in the bezel, I want to return it",return_exchange
+"the TV is defective, I'd like my money back and a pickup",return_exchange
+"I received a scratched TV and want to exchange it for an undamaged one",return_exchange
+"the TV flickers constantly and it's new, I need it replaced",return_exchange
+"the remote and the screen both arrived broken, I want to return the whole TV",return_exchange
+"my TV arrived with a cracked back panel, can I get a replacement",return_exchange
+"the TV speakers are dead out of the box, I'd like to exchange the unit",return_exchange
+"the TV was dropped during delivery, I want a replacement",return_exchange
+"TV stopped working after two days, can I exchange it for a new one",return_exchange
+"the fridge is too big for my kitchen, I want to exchange it",return_exchange
+"I'd like to return the dishwasher, I changed my mind",return_exchange
+"the washer is too wide for the closet, can I swap it for a narrower one",return_exchange
+"I want to exchange the stove for a gas model, I ordered electric by mistake",return_exchange
+"the dryer color doesn't match the washer, I want to return it",return_exchange
+"can I return the freezer, I no longer have room for it",return_exchange
+"I'd like to swap the range for the 24 inch version, this one doesn't fit",return_exchange
+"the microwave is too loud for my taste, I want to return it",return_exchange
+"I want to return the oven, our renovation is on hold",return_exchange
+"can I exchange the fridge for a counter depth model",return_exchange
+"I'd like to return the washer, we're relocating next month",return_exchange
+"the dryer doesn't fit my laundry nook, can I exchange it",return_exchange
+"I want to swap the dishwasher for a stainless one, I don't like the black finish",return_exchange
+"I'd like to send back the range, it's not the model my contractor wanted",return_exchange
+"can I exchange the microwave for a built-in one",return_exchange
+"my python script throws an error, can you fix it",off_topic
+"why won't my react app compile",off_topic
+"my sql query returns nothing, what's wrong",off_topic
+"my website won't load on my laptop, how do I fix it",off_topic
+"can you fix this bug in my java code",off_topic
+"my code keeps crashing with a null pointer exception",off_topic
+"why is my css not applying to the button",off_topic
+"help me debug this node script, it won't start",off_topic
+"my laptop won't turn on, what should I do",off_topic
+"the wifi on my phone keeps dropping, how do I fix it",off_topic
+"my printer is offline, can you help me reconnect it",off_topic
+"why does my git push keep failing",off_topic
+"write a bash script that renames all files in a folder",off_topic
+"how do I center a div in css",off_topic
+"what's the difference between a list and a tuple in python",off_topic
+"can you explain what an api is",off_topic
+"convert this json to a csv for me",off_topic
+"my excel formula shows an error, can you help",off_topic
+"how do I reset my gmail password",off_topic
+"my computer is running slow, how can I speed it up",off_topic
+"how do I clear the cache in chrome",off_topic
+"what is the time complexity of binary search",off_topic
+"my video game keeps freezing on startup",off_topic
+"my bike tire is flat, how do I patch it",off_topic
+"how do I fix a leaking garden hose",off_topic
+"what's the best way to learn spanish",off_topic
+"can you recommend a good book to read",off_topic
+"how many ounces are in a pound",off_topic
+"what year did the berlin wall fall",off_topic
+"write a limerick about a cat",off_topic
+"help me plan a birthday party for my kid",off_topic
+"what's a good gift for my dad",off_topic
+"how do I tie a tie",off_topic
+"give me a summary of the french revolution",off_topic
+"how do I change a flat tire on my car",off_topic
+"can you explain how credit scores work",off_topic
+"what's the tallest mountain in the world",off_topic
+"can you write a thank you note to my teacher",off_topic
+"how do I start running as a beginner",off_topic
+"why is the sky blue",off_topic
+"what is the process to cancel an order that hasn't shipped",general_question
+"how late can I cancel a stove order before it's delivered",general_question
+"what's the deadline to cancel a dishwasher order",general_question
+"is there a cutoff time for cancelling a fridge order",general_question
+"what are the steps to cancel an order in general",general_question
+"how do cancellations work for orders already on the truck",general_question
+"can an order still be cancelled the day before delivery",general_question
+"what happens to a dryer order if it gets cancelled after confirmation",general_question
+"how long do I have to cancel an order after buying it",general_question
+"am I able to cancel an order after it's been scheduled for delivery",general_question
+"is it possible to get an electrician through you for a new outlet",general_question
+"can your team install a new 240 volt line for a dryer",general_question
+"do you offer electrical work for ranges",general_question
+"is it possible to book a plumber for a fridge water line through you",general_question
+"do you provide gas line work for stoves",general_question
+"can installers run a new dryer vent through the wall",general_question
+"is it possible to get TV mounting on a brick wall",general_question
+"do you offer same day installation",general_question
+"what areas do your installers cover",general_question
+"is haul away included or does it cost extra",general_question
+"what do you do with old appliances after haul away",general_question
+"is recycling of old appliances part of your haul away service",general_question
+"is it possible to get a dryer delivered to a basement unit",general_question
+"can a fridge be delivered to a third floor walk-up",general_question
+"do you deliver washers to condos with narrow hallways",general_question
+"is it possible to get a stove delivered to a cottage",general_question
+"will the delivery team carry the dishwasher up the stairs",general_question
+"is it possible to schedule a delivery for a specific day",general_question
+"can I change my delivery date after ordering",general_question
+"how much notice do you need to reschedule a delivery",general_question
+"how do I find out whether a fault on my new dryer is covered",general_question
+"is a malfunction in the first week covered or only damage",general_question
+"does the warranty cover a washer that stops spinning",general_question
+"how can I tell if an issue with my oven counts as a defect",general_question
+"do you fix or swap a fridge that quits cooling in the first month",general_question
+"what do you do if a stove stops working after two weeks",general_question
+"are repairs covered if my freezer fails after delivery",general_question
+"who handles it if a dishwasher breaks within the warranty period",general_question
+"what is the difference between a defect and wear and tear",general_question
+"what do you do about a microwave that stops heating in the first month",general_question
+"what is the process for returning an appliance after delivery",general_question
+"how do I start an exchange on a large appliance in general",general_question
+"can a delivered dryer still be returned if I change my mind",general_question
+"what is your policy on returns after delivery for a changed mind",general_question
+"the washer arrived yesterday but I changed my mind, I want to send it back",return_exchange
+"I got the fridge last week and decided I don't want it, please pick it up",return_exchange
+"the stove was delivered but I changed my mind and want to return it",return_exchange
+"the dishwasher arrived and we've decided on another model, I'd like to return it",return_exchange
+"I changed my mind about the dryer after it was delivered, can you take it back",return_exchange
+"the range arrived today but we no longer want it, I need to return it",return_exchange
+"the freezer was delivered and I've had second thoughts, I want to send it back",return_exchange
+"we changed our minds about the microwave now that it's here, please arrange a return",return_exchange
+"the oven got delivered but I'd rather exchange it for a different one",return_exchange
+"our washer arrived and I don't want it anymore, how do I send it back",return_exchange
+"I received the TV and changed my mind, I'd like to return it",return_exchange
+"the dryer is here but I changed my mind, can you pick it up for a return",return_exchange
+"decided I don't want the fridge now that it's in my kitchen, I want to return it",return_exchange
+"I changed my mind after the stove arrived and would like a refund and pickup",return_exchange
+"the dishwasher is delivered but we're going a different direction, I want to return it",return_exchange
+"the washer has a dent and I want to return it for a refund",appliance_condition
+"my dryer is defective and I want a replacement",appliance_condition
+"the fridge came with a cracked door, please pick it up and replace it",appliance_condition
+"the freezer is damaged and I'd like to send it back",appliance_condition
+"the oven arrived with a broken knob and I want to exchange it",appliance_condition
+"the dishwasher doesn't work, I want my money back and a pickup",appliance_condition
+"my stove is defective, I'd like to swap it for a new one",appliance_condition
+"the washer is leaking and I want to return it",appliance_condition
+"the microwave arrived dented, I want a replacement unit",appliance_condition
+"dryer is broken out of the box, please arrange a pickup and refund",appliance_condition
+"my range has a cracked cooktop and I'd like to exchange it",appliance_condition
+"the fridge stopped cooling, I want to return it and get a refund",appliance_condition
+"the freezer arrived scratched and dented, I want it replaced",appliance_condition
+"the washer is faulty, can you send a new one and take this back",appliance_condition
+"the oven is defective and I want to return it",appliance_condition
+"the dishwasher was damaged in delivery, I'd like a refund and pickup",appliance_condition
+"my new dryer is broken and I'd like to send it back",appliance_condition
+"fridge arrived with a dent, I want an exchange for an undamaged one",appliance_condition
+"the stove's glass top is shattered, I want to return it",appliance_condition
+"the microwave doesn't heat, I want a replacement",appliance_condition
+"I want to cancel my washer order, what do I need to do",cancellation
+"please cancel the dishwasher order before it's delivered",cancellation
+"cancel my stove order please, the delivery is tomorrow",cancellation
+"I need to cancel the fridge order today",cancellation
+"can you cancel my dryer order before it ships",cancellation
+"I'd like to cancel my range order",cancellation
+"please cancel the freezer order and refund me",cancellation
+"can you cancel the order I placed this morning",cancellation
+"cancel the oven order, I don't need it",cancellation
+"I want to cancel my order before the truck comes",cancellation
