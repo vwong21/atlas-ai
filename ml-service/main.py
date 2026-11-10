@@ -20,7 +20,7 @@ print("Modules Loaded")
 def read_root():
     return {"Hello": "World"}
 
-@app.post("/classify/")
+@app.post("/classify")
 def classify(req: ClassifyReq):
     print("received")
     print("Embedding Message")
