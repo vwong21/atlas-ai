@@ -8,24 +8,21 @@ import org.springframework.web.bind.annotation.RestController;
 public class AtlasAiApplication {
 
     /*
-    Build cache function
-    */
-
-    
+     * Build cache function
+     */
 
     @RequestMapping("/")
     String home() {
         return "Hello World!";
     }
 
-    @RequestMapping("/chat") 
+    @RequestMapping("/chat")
     String chat() {
         return "Hello World";
     }
-    
 
     public static void main(String[] args) {
-        SpringApplication.run(MyApplication.class, args);
+        SpringApplication.run(AtlasAiApplication.class, args);
     }
 
 }

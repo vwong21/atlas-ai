@@ -1,12 +1,29 @@
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Case {
+    // Allowed classifier labels, checked when the label comes back from
+    // MlServiceClient
+    public static final String CANCELLATION = "cancellation";
+    public static final String RETURN_EXCHANGE = "return_exchange";
+    public static final String SERVICE_REQUEST = "service_request";
+    public static final String APPLIANCE_CONDITION = "appliance_condition";
+
+    public static final String DEST_HQ = "HQ";
+    public static final String DEST_CALL_CENTER = "CALL_CENTER";
+
     private String caseType;
     private String description;
-    private List<Integer> skus;
-    private OrderId orderId;
-    private CustomerInfo customerInfo;
+    private List<String> skus = new ArrayList<>();
+    private OrderId orderId = new OrderId();
+    private CustomerInfo customerInfo = new CustomerInfo();
+    private String destination;
+
+    private static boolean hasText(String s) {
+        return s != null && !s.isBlank();
+    }
 
     public String getCaseType() {
         return caseType;
@@ -24,11 +41,11 @@ public class Case {
         this.description = description;
     }
 
-    public List<Integer> getSkus() {
+    public List<String> getSkus() {
         return skus;
     }
 
-    public void setSkus(List<Integer> skus) {
+    public void setSkus(List<String> skus) {
         this.skus = skus;
     }
 
@@ -48,48 +65,58 @@ public class Case {
         this.customerInfo = customerInfo;
     }
 
+    public String getDestination() {
+        return destination;
+    }
+
+    public void setDestination(String destination) {
+        this.destination = destination;
+    }
+
     public static class OrderId {
         // If company contains multiple order identifiers, can add them here
-        private Integer orderNumber;
-        private Integer transactionId;
-        private Integer purchaseOrder;
+        private String contractId; // preferred
+        private String purchaseOrder;
+        private String orderNumber;
 
+        @JsonIgnore
         public boolean isValid() {
-            return orderNumber != null || transactionId != null || purchaseOrder != null;
+            return hasText(contractId) || hasText(purchaseOrder) || hasText(orderNumber);
         }
 
-        public Integer getOrderNumber() {
-            return orderNumber;
+        public String getContractId() {
+            return contractId;
         }
 
-        public void setOrderNumber(Integer orderNumber) {
-            this.orderNumber = orderNumber;
+        public void setContractId(String contractId) {
+            this.contractId = contractId;
         }
 
-        public Integer getTransactionId() {
-            return transactionId;
-        }
-
-        public void setTransactionId(Integer transactionId) {
-            this.transactionId = transactionId;
-        }
-
-        public Integer getPurchaseOrder() {
+        public String getPurchaseOrder() {
             return purchaseOrder;
         }
 
-        public void setPurchaseOrder(Integer purchaseOrder) {
+        public void setPurchaseOrder(String purchaseOrder) {
             this.purchaseOrder = purchaseOrder;
+        }
+
+        public String getOrderNumber() {
+            return orderNumber;
+        }
+
+        public void setOrderNumber(String orderNumber) {
+            this.orderNumber = orderNumber;
         }
     }
 
     public static class CustomerInfo {
         private String firstName;
         private String lastName;
-        private Contact contact;
+        private Contact contact = new Contact();
 
+        @JsonIgnore
         public boolean isValid() {
-            return contact != null && contact.isValid();
+            return hasText(firstName) && hasText(lastName) && contact != null && contact.isValid();
         }
 
         public String getFirstName() {
@@ -117,11 +144,12 @@ public class Case {
         }
 
         public static class Contact {
-            private String phoneNumber;
-            private String email;
+            private String phoneNumber; // optional
+            private String email; // required
 
+            @JsonIgnore
             public boolean isValid() {
-                return phoneNumber != null || email != null;
+                return hasText(email);
             }
 
             public String getPhoneNumber() {
