@@ -24,7 +24,7 @@ def read_root():
 def classify(req: ClassifyReq):
     print("received")
     print("Embedding Message")
-    X = emb_model.encode([req.prompt])
+    X = emb_model.encode([req.message])
     print("Predicting Outcome...")
     print(model.predict(X)[0])
-    return{"class": model.predict(X)[0]}
+    return{"caseType": model.predict(X)[0]}
