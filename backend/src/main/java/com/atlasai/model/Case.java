@@ -4,17 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Case {
-    // Allowed classifier labels, checked when the label comes back from
-    // MlServiceClient
-    public static final String CANCELLATION = "cancellation";
-    public static final String RETURN_EXCHANGE = "return_exchange";
-    public static final String SERVICE_REQUEST = "service_request";
-    public static final String APPLIANCE_CONDITION = "appliance_condition";
-
     public static final String DEST_HQ = "HQ";
     public static final String DEST_CALL_CENTER = "CALL_CENTER";
 
-    private String caseType;
+    private CaseType caseType;
     private String description;
     private List<String> skus = new ArrayList<>();
     private OrderId orderId = new OrderId();
@@ -22,11 +15,11 @@ public class Case {
     private String destination;
     private CaseStatus caseStatus = CaseStatus.COLLECTING;
 
-    public String getCaseType() {
+    public CaseType getCaseType() {
         return caseType;
     }
 
-    public void setCaseType(String caseType) {
+    public void setCaseType(CaseType caseType) {
         this.caseType = caseType;
     }
 

@@ -1,5 +1,7 @@
 package com.atlasai.dto;
 
-public record ClassifyResponse(String caseType) {
+import com.atlasai.model.CaseType;
+
+public record ClassifyResponse(CaseType caseType) {
 
 }

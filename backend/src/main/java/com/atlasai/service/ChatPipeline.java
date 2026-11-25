@@ -1,19 +1,14 @@
 package com.atlasai.service;
 
-import java.io.IOException;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.URI;
-import java.net.URL;
-import java.net.http.HttpClient;
-import java.net.http.HttpRequest;
-
-import org.springframework.http.ResponseEntity;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestClient;
+import org.springframework.web.client.RestClientException;
 
 import com.atlasai.dto.ClassifyRequest;
 import com.atlasai.dto.ClassifyResponse;
+import com.atlasai.model.CaseType;
 import com.atlasai.session.ChatSession;
 import com.atlasai.session.Message;
 import com.atlasai.session.Role;
@@ -23,6 +18,7 @@ import com.atlasai.session.SessionStore;
 public class ChatPipeline {
     private final SessionStore sessionStore;
     private final RestClient restClient;
+    private static final Logger log = LoggerFactory.getLogger(ChatPipeline.class);
 
     public ChatPipeline(SessionStore sessionStore, RestClient.Builder restClientBuilder) {
         this.sessionStore = sessionStore;
@@ -38,10 +34,8 @@ public class ChatPipeline {
         Message message = new Message(Role.CUSTOMER, messageRequest);
         session.addMessage(message);
 
-        // 4. Make a request to classifier which returns the caseType as a String
-        ClassifyResponse caseTypeRes = this.restClient.post().uri("/classify").body(new ClassifyRequest(messageRequest))
-                .retrieve().body(ClassifyResponse.class);
-
+        // 4. Make a request to classifier which returns the caseType
+        CaseType classifiedCaseType = classify(messageRequest).caseType();
         // 5. Build a placeholder reply (real logic comes later)
 
         // 6. Add the assistant's reply to the session history
@@ -50,5 +44,20 @@ public class ChatPipeline {
 
         // 8. Return a ChatResponse with chatId, reply, and the session state
 
+    }
+
+    private ClassifyResponse classify(String messageRequest) {
+        try {
+            ClassifyResponse response = restClient.post().uri("/classify")
+                    .body(new ClassifyRequest(messageRequest))
+                    .retrieve().body(ClassifyResponse.class);
+            if (response == null) {
+                return new ClassifyResponse(CaseType.UNKNOWN);
+            }
+            return response;
+        } catch (RestClientException e) {
+            log.error("Classifier call failed", e);
+            return new ClassifyResponse(CaseType.UNKNOWN);
+        }
     }
 }

@@ -26,5 +26,5 @@ def classify(req: ClassifyReq):
     print("Embedding Message")
     X = emb_model.encode([req.message])
     print("Predicting Outcome...")
-    print(model.predict(X)[0])
-    return{"caseType": model.predict(X)[0]}
+    pred = model.predict(X)[0]
+    return{"caseType": pred}
