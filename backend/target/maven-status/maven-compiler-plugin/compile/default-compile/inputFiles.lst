@@ -1,9 +1,15 @@
 C:\Users\User\Desktop\code\atlas-ai\backend\src\main\java\com\atlasai\AtlasAiApplication.java
 C:\Users\User\Desktop\code\atlas-ai\backend\src\main\java\com\atlasai\controller\ChatController.java
+C:\Users\User\Desktop\code\atlas-ai\backend\src\main\java\com\atlasai\dto\ChatRequest.java
+C:\Users\User\Desktop\code\atlas-ai\backend\src\main\java\com\atlasai\dto\ChatResponse.java
+C:\Users\User\Desktop\code\atlas-ai\backend\src\main\java\com\atlasai\dto\ClassifyRequest.java
+C:\Users\User\Desktop\code\atlas-ai\backend\src\main\java\com\atlasai\dto\ClassifyResponse.java
 C:\Users\User\Desktop\code\atlas-ai\backend\src\main\java\com\atlasai\model\Case.java
 C:\Users\User\Desktop\code\atlas-ai\backend\src\main\java\com\atlasai\model\CaseStatus.java
+C:\Users\User\Desktop\code\atlas-ai\backend\src\main\java\com\atlasai\model\CaseType.java
 C:\Users\User\Desktop\code\atlas-ai\backend\src\main\java\com\atlasai\model\CustomerInfo.java
 C:\Users\User\Desktop\code\atlas-ai\backend\src\main\java\com\atlasai\model\OrderId.java
+C:\Users\User\Desktop\code\atlas-ai\backend\src\main\java\com\atlasai\service\ChatPipeline.java
 C:\Users\User\Desktop\code\atlas-ai\backend\src\main\java\com\atlasai\session\ChatSession.java
 C:\Users\User\Desktop\code\atlas-ai\backend\src\main\java\com\atlasai\session\Message.java
 C:\Users\User\Desktop\code\atlas-ai\backend\src\main\java\com\atlasai\session\Role.java
