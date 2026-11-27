@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestClient;
 import org.springframework.web.client.RestClientException;
 
+import com.atlasai.dto.ChatResponse;
 import com.atlasai.dto.ClassifyRequest;
 import com.atlasai.dto.ClassifyResponse;
 import com.atlasai.model.CaseType;
@@ -25,7 +26,7 @@ public class ChatPipeline {
         this.restClient = restClientBuilder.baseUrl("http://localhost:8000").build();
     }
 
-    public void handle(String chatId, String messageRequest) {
+    public ChatResponse handle(String chatId, String messageRequest) {
         // 1. Get or create the session from the store using chatId
         ChatSession session = sessionStore.getOrCreate(chatId);
         // 2. touch() the session so its last-activity time updates
@@ -37,13 +38,13 @@ public class ChatPipeline {
         // 4. Make a request to classifier which returns the caseType
         CaseType classifiedCaseType = classify(messageRequest).caseType();
         // 5. Build a placeholder reply (real logic comes later)
-
+        String reply = buildReply(classifiedCaseType);
         // 6. Add the assistant's reply to the session history
-
+        session.addMessage(new Message(Role.ASSISTANT, reply));
         // 7. Save the session back to the store
-
+        sessionStore.save(session);
         // 8. Return a ChatResponse with chatId, reply, and the session state
-
+        return new ChatResponse(chatId, reply, session.getState());
     }
 
     private ClassifyResponse classify(String messageRequest) {
@@ -59,5 +60,9 @@ public class ChatPipeline {
             log.error("Classifier call failed", e);
             return new ClassifyResponse(CaseType.UNKNOWN);
         }
+    }
+
+    private String buildReply(CaseType classifiedCaseType) {
+        return "Placeholder String";
     }
 }
