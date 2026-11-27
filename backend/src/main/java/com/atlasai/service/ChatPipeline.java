@@ -1,5 +1,9 @@
 package com.atlasai.service;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.ThreadLocalRandom;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
@@ -13,6 +17,7 @@ import com.atlasai.model.CaseType;
 import com.atlasai.session.ChatSession;
 import com.atlasai.session.Message;
 import com.atlasai.session.Role;
+import com.atlasai.session.SessionState;
 import com.atlasai.session.SessionStore;
 
 @Service
@@ -27,23 +32,26 @@ public class ChatPipeline {
     }
 
     public ChatResponse handle(String chatId, String messageRequest) {
-        // 1. Get or create the session from the store using chatId
+        // Get or create session
         ChatSession session = sessionStore.getOrCreate(chatId);
-        // 2. touch() the session so its last-activity time updates
         session.touch();
-        // 3. Add the customer's message to the session history
+
+        // Create new Message and add the request message to session
         Message message = new Message(Role.CUSTOMER, messageRequest);
         session.addMessage(message);
 
-        // 4. Make a request to classifier which returns the caseType
+        // Pass message through classifier, giving us a case type
         CaseType classifiedCaseType = classify(messageRequest).caseType();
-        // 5. Build a placeholder reply (real logic comes later)
-        String reply = buildReply(classifiedCaseType);
-        // 6. Add the assistant's reply to the session history
+
+        // If a valid case type, change session state to COLLECTING
+        if (classifiedCaseType != CaseType.GENERAL_QUESTION && classifiedCaseType != CaseType.OFF_TOPIC
+                && classifiedCaseType != CaseType.UNKNOWN)
+            session.setState(SessionState.COLLECTING);
+
+        String reply = buildReply(classifiedCaseType, session);
         session.addMessage(new Message(Role.ASSISTANT, reply));
-        // 7. Save the session back to the store
         sessionStore.save(session);
-        // 8. Return a ChatResponse with chatId, reply, and the session state
+
         return new ChatResponse(chatId, reply, session.getState());
     }
 
@@ -62,7 +70,17 @@ public class ChatPipeline {
         }
     }
 
-    private String buildReply(CaseType classifiedCaseType) {
+    private String buildReply(CaseType classifiedCaseType, ChatSession session) {
+        if (classifiedCaseType != CaseType.CANCELLATION) {
+            if (session.getState() == SessionState.CHATTING) {
+                List<String> responses = new ArrayList<>(List.of(
+                        "I can help with that. Please fill in the details below and I'll get your cancellation request ready.",
+                        "Sure, I can help you cancel an order. Please provide the details below and I'll take it from there.",
+                        "Thanks for letting me know. Please enter the details below so I can set up your cancellation request."));
+                return responses.get(ThreadLocalRandom.current().nextInt(responses.size()));
+            }
+
+        }
         return "Placeholder String";
     }
 }
